@@ -1,0 +1,135 @@
+:root {
+	--font:'Epilogue', sans-serif;
+	--color-font: #464b4f;
+	--color-white: #fff;
+	--color-gray: #888a8b;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+a{
+	text-decoration: none;
+}
+body, html {
+	min-height: 100%;
+	width: 100%;
+	font-weight: 400;
+}
+html{
+	scroll-behavior: smooth;
+}
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+body{
+	font: 18px var(--font);
+	color: var(--color-font);
+	line-height: 30px;
+}
+.container{
+	margin: 0 auto;
+	max-width: 980px;
+	padding: 0 15px;
+}
+.header{
+	height: 100vh;
+	background: url('../images/header-bgr.jpg') no-repeat top center;
+	background-size: cover;
+	padding: 50px 0;
+	color: var(--color-white);
+}
+.wrapper{
+	height: 100%;
+}
+.header__wrapper{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+.header__title{
+	font-weight: 700;
+	font-size: 80px;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+.header__text{
+	width: 45%;
+	margin: 0 auto;
+}
+.header__arrow{
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+}
+.header__arrow img{
+	padding: 17px 15px;
+	border: 2px solid var(--color-white);
+	border-radius: 50%;
+	transition: all .3s ease;
+}
+.header__arrow img:hover{
+	border: 2px solid var(--color-font);
+}
+
+.content {
+	padding: 125px 0 90px;
+	text-align: center;
+	background: url('../images/content-bgr.png') no-repeat center;
+	background-size: cover;
+}
+.content__wrapper-title {
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 36px;
+	text-transform: uppercase;
+	margin-bottom: 70px;
+}
+.content__wrapper-text {
+	font-size: 30px;
+	line-height: 42px;
+	margin-bottom: 115px;
+}
+.content__items-title {
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 36px;
+	margin-bottom: 100px;
+	text-transform: uppercase;
+}
+.content__items {
+	display: flex;
+	justify-content: space-between;
+	text-align: left;
+	text-transform: uppercase;
+}
+.content__item {
+	width: 32%;
+}
+.content__item-title {
+	line-height: 42px;
+	font-weight: 700;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+}
+.content__item-text {
+	color: var(--color-gray);
+}
+/* Main Styles */
